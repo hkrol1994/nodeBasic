@@ -7,7 +7,7 @@ const forecast = async (lat, lon) => {
   try {
     const result = await axios.get(url);
     return {
-      tempatutre: result.data.main.temp,
+      tempature: result.data.main.temp,
       humidity: result.data.main.humidity,
       wind: result.data.wind.speed,
       description: result.data.weather[0].description,

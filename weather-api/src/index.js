@@ -5,6 +5,7 @@ const path = require("path");
 const port = process.env.PORT;
 const weatherRouter = require("./routers/weatherRouter");
 const publicDirectoryPath = path.join(__dirname, "../public");
+require("./db/mongoose");
 
 const app = express();
 

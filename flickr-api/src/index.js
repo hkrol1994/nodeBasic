@@ -4,6 +4,7 @@ const path = require("path");
 
 const photosRouter = require("./routers/photosRouter");
 const publicDirectoryPath = path.join(__dirname, "../public");
+require("./db/mongoose");
 
 const port = process.env.PORT;
 const app = express();
